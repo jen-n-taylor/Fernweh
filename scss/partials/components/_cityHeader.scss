@@ -1,0 +1,84 @@
+
+// -------------------- CITY HEADER ---------------------
+
+// GLOBAL 
+// -------------------------------------------------------
+
+.city-header {
+	background-size: cover;
+	height: 500px;
+	margin-top: 0px;
+
+	@include media-query (tablet-only) {
+		height: 700px;
+	}
+
+	@include media-query (desk) {
+		height: 500px;
+	}
+}
+
+.city-header-text {
+	display: flex;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    align-items: center;
+    flex-direction: column;
+ 	-webkit-flex-direction: column;
+
+	font-family: $main-font;
+}
+
+ .city-header-title {
+ 	font-size: 35px;
+ 	font-style: strong;
+ 	text-transform: uppercase;
+ 	letter-spacing: 7px;
+ 	font-weight: 500;
+ 	display: inline-block;
+ 	margin-top: 100px;
+ 	padding: 10px 23px 12px 28px;
+
+ 	@include media-query (tablet-only) {
+ 		font-size: 100px;
+ 		margin-top: 120px;
+ 	}
+
+ 	@include media-query (desk) {
+		font-size: 125px;
+ 		margin-top: 130px;
+ 	}
+  }
+
+
+// MARRAKESH -----------------------------------------------------------
+
+.city-header-marrakesh {
+	background-image: url(../images/city_images/marrakesh_images/header_marrakesh.jpg);
+}
+
+.city-header-text-marrakesh {
+	color: $marrakesh-header-color;
+}
+
+// LISBON ---------------------------------------------------------------
+
+.city-header-lisbon {
+	background-image: url(../images/city_images/lisbon_images/header_lisbon.jpg);
+	width: 100%;
+}
+
+.city-header-text-lisbon {
+	color: $lisbon-header-color;
+}
+
+// ZAGREB ---------------------------------------------------------------
+
+.city-header-zagreb {
+	background-image: url(../images/city_images/zagreb_images/oldtown_zagreb.jpg);
+	// Courtesy of Joyt via http://bit.ly/1VTgOa1.
+}
+
+.city-header-text-zagreb {
+	color: $zagreb-header-color;
+}

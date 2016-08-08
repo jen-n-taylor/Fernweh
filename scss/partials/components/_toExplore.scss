@@ -1,0 +1,108 @@
+
+// -------------------- TO EXPLORE ---------------------
+
+
+// GLOBAL 
+// -----------------------------------------------------------
+
+.explore_container {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+
+	background-color: $background;
+	padding: 80px 0px;
+}
+
+.explore_wrapper {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+
+	width: 100%;
+	max-width: 1171px;
+	margin: 0 auto;
+}
+
+.explore_wrapper h2 {
+		text-transform: uppercase;
+		font-family: $main-font;
+		font-size: 30px;
+		margin: 0 auto;
+
+		@include media-query (tablet-and-up) {
+			font-size: 60px;
+		}
+	}
+
+.explore_wrapper .line {
+		width: 63px;
+		height: 2px;
+		margin: 0 auto;
+		margin-top: 20px;
+
+		@include media-query (tablet-and-up) {
+			margin-top: 40px;
+		}
+	}
+
+.explore_wrapper p {
+	text-align: center;
+	font-family: $secondary-font;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 175%;
+	width: 300px;
+	margin-top: 40px;
+	padding: 0px 20px;
+
+	@include media-query (tablet-only) {
+		font-size: 16px;
+		width: 600px;
+		padding: 0px;
+	}
+
+	@include media-query (desk) {
+		width: 1000px;
+		font-size: 16px;
+		padding: 0px;
+	}
+}
+
+// MARRAKESH ---------------------------------------------------------
+
+.marrakesh_explore_wrapper h2 {
+	color: $marrakesh-primary-color;
+}
+
+.marrakesh_explore_wrapper .line {
+	background-color: $marrakesh-secondary-color;
+}
+
+// LISBON ------------------------------------------------------------
+
+.lisbon_explore_wrapper h2 {
+	color: $lisbon-primary-color;
+}
+
+.lisbon_explore_wrapper .line {
+	background-color: $lisbon-secondary-color;
+}
+
+// ZAGREB ------------------------------------------------------------
+
+.zagreb_explore_wrapper h2 {
+	color: $zagreb-primary-color;
+}
+
+.zagreb_explore_wrapper .line {
+	background-color: $zagreb-secondary-color;
+}

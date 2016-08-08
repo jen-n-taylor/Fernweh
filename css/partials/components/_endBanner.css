@@ -1,0 +1,12 @@
+.end_banner_container {
+  height: 500px;
+  background-position: cover;
+}
+
+.marrakesh_end_banner {
+  background-image: url(../images/city_images/marrakesh_images/marrakesh_end_banner.jpeg);
+}
+
+.lisbon_end_banner {
+  background-image: url(../images/city_images/lisbon_images/lisbon_end_banner.jpeg);
+}

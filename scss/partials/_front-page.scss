@@ -1,0 +1,721 @@
+// FRONT PAGE 
+// Anything to do with the front page layout goes here.
+
+ /* HEADER begins ................................................... */
+
+.main_header {
+	background-image: url(../images/front_page_images/header_moon.jpg);
+	background-size: cover;
+	height: 80vh;
+	margin-top: 0;
+	transition: background-image 1.5s;
+
+	@include media-query(tablet-and-up) {
+		height: 100vh;
+	}
+}
+
+.header_text {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+
+	color: $main-header-color;
+	font-family: $main-font;
+	position: relative;
+}
+
+.header_text h1 {
+	font-size: 35px;
+	font-style: strong;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	font-weight: 500;
+	border: 2px solid $main-header-color;
+	display: inline-block;
+	margin-top: 35%;
+	padding: 10px 23px 12px 28px;
+	transition: color 1s;
+
+		@include media-query(tablet-only) {
+			padding-top: 15px;
+			font-size: 100px;
+			border: 5px solid $main-header-color;
+		}
+
+		@include media-query(desk) {
+			font-size: 125px;
+			border: 5px solid $main-header-color;
+			margin-top: 250px;
+		}
+}
+
+.header_text p {
+	font-size: 20px;
+	font-weight: 400;
+	text-align: center;
+
+	@include media-query (tablet-only) {
+		font-size: 30px;
+	}
+
+	@include media-query(desk) {
+		font-size: 30px;
+	}
+}
+
+.smooth_scroll_arrow {
+	max-width: 1170px;
+	padding: 10px 20px 0px 20px;
+	margin-top: 20%;
+	margin-bottom: 1%;
+
+	@include media-query (tablet-only) {
+		margin-top: 1%;
+		margin-bottom: 1%;
+	}
+
+	@include media-query (desk) {
+		margin-top: 1.5%;
+		margin-bottom: 1%;
+	}
+
+	i {
+		font-size: 60px;
+		text-align: center;
+	 	color: $main-header-color;
+		transition: all 1s;
+	}
+
+	i:hover {
+		color: $main-secondary-color;
+	}
+}
+
+/* FERNWEH begins ................................................... */
+
+.fernweh_container {
+	background-color: $background;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	@include media-query (tablet-and-up) {
+		padding-top: 60px;
+		padding-bottom: 70px;
+	}
+}
+
+.fernweh_wrapper {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.fernweh_wrapper h2 {
+	text-transform: uppercase;
+	font-family: $main-font;
+	font-size: 40px;
+	margin: 0;
+	color: $main-primary-color;
+
+	@include media-query (tablet-and-up) {
+		font-size: 60px;
+	}
+}
+
+.fernweh_wrapper .dictionary {
+	font-family: $main-font;
+	font-size: 16px;
+	text-align: center;
+	color: $main-secondary-color;
+	padding: 25px 20px 15px 20px;
+	margin: 0;
+
+	@include media-query (tablet-and-up) {
+		font-size: 20px;
+		margin-top: 30px;
+		margin-bottom: 0;
+		padding: 0;
+	}
+}
+
+.fernweh_wrapper .line1 {
+	background-color: $main-tertiary-color;
+	margin-top: 15px;
+	margin-bottom: 20px;
+
+	@include media-query (tablet-and-up) {
+		margin-top: 45px;
+		margin-bottom: 40px;
+	}
+}
+
+.fernweh_wrapper .definition {
+	text-align: center;
+	line-height: 175%;
+	font-family: $secondary-font;
+	margin: 0;
+	padding: 10px 20px;
+	font-size: 14px;
+
+	@include media-query (tablet-and-up) {
+		max-width: 650px;
+		font-size: 16px;
+		padding: 0px;
+	}
+}
+
+.fernweh_wrapper .line2 {
+	background-color: $main-tertiary-color;
+	margin-top: 20px;
+	margin-bottom: 15px;
+
+	@include media-query (tablet-and-up) {
+		margin-top: 45px;
+		margin-bottom: 40px;
+	}
+}
+
+.fernweh_wrapper .collection {
+	font-family: $main-font;
+	font-size: 16px;
+	text-align: center;
+	margin: 0px;
+	padding: 10px 20px;
+	font-weight: 500;
+
+	@include media-query (tablet-and-up) {
+		padding: 0px;
+		font-size: 18px;
+	}
+}
+
+.fernweh_wrapper .collection span {
+	color: $main-secondary-color;
+}
+
+/* CITY GUIDES begin ............................................... */
+
+.city_guides_container {
+	margin: 40px 0;
+
+	@include media-query (tablet-and-up) {
+		margin: 80px 0;
+	}
+}
+
+.city_guides_wrapper {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.city_guides_title {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+
+	h2 {
+		text-transform: uppercase;
+		font-family: $main-font;
+		font-size: 30px;
+		text-align: center;
+		color: $main-primary-color;
+		margin-top: 0;
+
+		@include media-query (tablet-and-up) {
+			font-size: 60px;
+		}
+	}
+
+	.line {
+		background-color: $main-tertiary-color;
+		margin-top: -10px;
+		margin-bottom: 15px;
+
+		@include media-query (tablet-and-up) {
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.guide_container {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: center;
+	-webkit-justify-content: center;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+
+	margin-top: 15px;
+
+	@include media-query (tablet-and-up) {
+		margin-top: 30px;
+	}
+}
+
+.guide_container figure {
+	margin: 10px;
+	position: relative;
+	transition: opacity 1s;
+
+		&:hover {
+			opacity: .7;
+		}
+}
+
+.guide_container img {
+	height: 250px;
+	width: 250px;
+
+	@include media-query (tablet-only) {
+		height: 330px;
+		width: 330px;
+	}
+
+	@include media-query (desk) {
+		height: 370px;
+		width: 370px;
+	}
+}
+
+.guide_container figcaption {
+	position: absolute;
+	top: 40px;
+	left: 40px;
+
+	height: 170px;
+	width: 170px;
+
+	font-family: $main-font;
+	font-size: 25px;
+	font-weight: 600;
+	text-align: center;
+	color: $main-header-color;
+	border: solid $main-header-color 6px;
+	padding-top: 55px;
+	transition: opacity .75s;
+
+	@include media-query (tablet-only) {
+		top: 65px;
+		left: 65px;
+
+		height: 200px;
+		width: 200px;
+		font-size: 30px;
+		padding-top: 60px;
+	}
+
+	@include media-query (desk) {
+		top: 72px;
+		left: 72px;
+
+		height: 226px;
+		width: 226px;
+		font-size: 30px;
+		padding-top: 72.5px;
+	}
+}
+
+/* ABOUT ME begins ................................................. */
+
+.about_me_container {
+	background-color: $background;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	@include media-query (tablet-only) {
+
+	}
+
+	@include media-query (desk) {
+		margin: 80px 0;
+		padding: 0px;
+	}
+}
+
+.about_me_wrapper {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: space- between;
+	-webkit-justify-content: space-between;
+
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+.about_me_picture {
+	display: none;
+
+	@include media-query (tablet-and-up) {
+		display: block;
+	}
+}
+
+// Why isn't this picture going all the way to the bottom of the section? There seems to be a few pixels of space at the bottom of the image and I can't figure out why.
+.about_me_picture img {
+	
+	@include media-query (tablet-only) {
+		height: 400px;
+		padding: 0;	
+	}
+
+	@include media-query (desk) {
+		height: 600px;
+		padding: 0;
+	}
+}
+
+.about_me_blurb {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+.about_me_title {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+.about_me_title h2{
+	text-transform: uppercase;
+	font-family: $main-font;
+	font-size: 30px;
+	color: $main-primary-color;
+	margin-top: 0px;
+
+	@include media-query (tablet-and-up) {
+		font-size: 60px;
+		margin-top: 20px;
+	}
+}
+
+.about_me_title .line {
+	background-color: $main-tertiary-color;
+	margin-top: -10px;
+}
+
+.about_me_text {
+	padding: 0px 20px;
+	font-family: $secondary-font;
+	margin-top: 20px;
+
+	@include media-query (tablet-only) {
+		max-width: 350px;
+		margin-top: 20px;
+	}
+
+	@include media-query (desk) {
+		max-width: 500px;
+		padding: 0px;
+		margin-top: 40px;
+	}
+}
+
+.about_me_text p {
+	font-size: 14px;
+
+	@include media-query (tablet-only) {
+		font-size: 14px;
+	}
+
+	@include media-query (desk) {
+		font-size: 16px;
+	}
+}
+
+.about_me_text .line_small {
+	background-color: $main-primary-color;
+	height: 2px;
+}
+
+.about_me_text .quote {
+	margin-top: 25px;
+	margin-bottom: 0px;
+	font-size: 14px;
+
+	@include media-query (tablet-only) {
+		margin-top: 25px;
+		font-size: 14px;
+	}
+
+	@include media-query (desk) {
+		margin-top: 45px;
+		font-size: 18px;
+	}
+}
+
+.about_me_text .steinbeck {
+	margin-top: 8px;
+	font-size: 12px;
+
+	@include media-query (tablet-only) {
+		font-size: 12px;
+	}
+
+	@include media-query (desk) {
+		font-size: 14px;
+	}
+}
+
+/* CONTACT begins ................................................... */
+
+.contact_me_container {
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	@include media-query (tablet-and-up) {
+		margin: 80px 0;
+		padding-top: 0;
+	}
+}
+
+.contact_title {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+.contact_title h2 {
+	text-transform: uppercase;
+	font-family: $main-font;
+	font-size: 30px;
+	color: $main-primary-color;
+	margin-top: 0;
+
+	@include media-query (desk) {
+		font-size: 60px;
+		padding-top: 0;
+		margin-top: 0;
+	}
+}
+
+.contact_title .line {
+	background-color: $main-tertiary-color;
+	margin-top: -10px;
+}
+
+.contact_me_wrapper {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: center;
+	-webkit-justify-content: center;
+	
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+	margin-top: 30px;
+
+	@include media-query (tablet-only) {
+		justify-content: center;
+		-webkit-justify-content: center;
+	}
+
+	@include media-query (desk) {
+		justify-content: space- between;
+		-webkit-justify-content: space-between;
+		margin-top: 60px;
+	}
+}
+
+.get_in_touch {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+}
+
+form {
+
+	@include media-query (tablet-and-up) {
+		width: 100%;
+		max-width: 600px;
+	}
+}
+
+input {
+	display: block;
+	border: none;
+    border-bottom: 1px solid gray;
+    background-color: rgba(200,200,200,0.1);
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+    @include media-query (tablet-and-up) {
+    	display: inline-block;
+    	margin: 0;
+    }
+}
+
+.firstName, .lastName {
+	width: 280px;
+	font-family: $main-font;
+	padding: 10px 15px;
+
+	@include media-query (tablet-and-up) {
+		width: 292px;
+	}
+}
+
+.firstName {
+
+	@include media-query (tablet-and-up) {
+		margin-right: 10px;
+	}
+}
+
+.email {
+	width: 280px;
+	font-family: $main-font;
+	padding: 10px 15px;
+
+	@include media-query (tablet-and-up) {
+		width: 598px;
+		margin-top: 10px;
+	}
+}
+
+.message {
+	width: 280px;
+	font-family: $main-font;
+	padding: 10px 15px;
+	margin-top: 10px;
+	border: 1px solid grey;
+	margin-left: 20px;
+
+	@include media-query (tablet-and-up) {
+		width: 598px;
+		margin-top: 10px;
+		margin-left: 0px;
+	}
+}
+
+.checkbox input {
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+label {
+	display: none;
+
+	@include media-query (tablet-and-up) {
+		display: inline-block;
+		font-family: $main-font;
+	}
+}
+
+label p {
+	display: none;
+
+	@include media-query (tablet-and-up) {
+		display: inline-block;
+		font-size: 16px;
+		margin: 5px;
+	}
+}
+
+.send {
+	width: 280px;
+	margin-top: 10px;
+	padding: 10px 15px;
+	font-family: $main-font;
+	font-weight: 700;
+	transition: color 1s, background-color 1s;
+
+	@include media-query (tablet-and-up) {
+		width: 598px;
+	}
+}
+
+.send:hover {
+	background-color: $main-primary-color;
+	color: white;
+	border-bottom: solid 1px $main-primary-color;
+}
+
+.social_media_icons {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	
+	margin: 0 auto;
+	margin-top: 25px;
+
+	@include media-query (tablet-and-up) {
+		margin-top: 50px;
+	}
+}
+
+.social_media_icons i {
+	list-style-type: none;
+	font-size: 25px;
+	display: inline-block;
+	padding: 0px 25px;
+	margin-left: 0px;
+	color: $main-primary-color;
+	transition: color 1s;
+
+	&:hover {
+	color: $main-tertiary-color;
+	}
+
+	@include media-query (tablet-and-up) {
+		font-size: 50px;
+		padding: 0px 50px;
+	}
+}
+
+.contact_me_image {
+	display: none;
+
+	@include media-query(desk) {
+		display: block;
+	}
+}
+
+.contact_me_image img {
+	max-height: 500px;
+}

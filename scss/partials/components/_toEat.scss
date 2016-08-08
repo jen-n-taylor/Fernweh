@@ -1,0 +1,153 @@
+
+// -------------------- TO EAT ---------------------
+
+
+// GLOBAL 
+// -----------------------------------------------------------
+
+.to_eat_container {
+	padding: 80px 0px;
+}
+
+.to_eat_wrapper {
+	width: 100%;
+	max-width: 1171px;
+	margin: 0 auto;
+}
+
+.to_eat_wrapper h2 {
+	text-transform: uppercase;
+	font-family: $main-font;
+	font-size: 30px;
+	margin: 0 auto;
+	text-align: center;
+
+	@include media-query (tablet-and-up) {
+		font-size: 60px;
+	}
+}
+
+.to_eat_wrapper .line {
+	width: 63px;
+	height: 2px;
+	margin: 0 auto;
+	margin-top: 20px;
+
+	@include media-query (tablet-and-up) {
+		margin-top: 40px;
+	}
+}
+
+.what_to_eat {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+
+	width: 100%;
+	max-width: 1171px;
+	margin: 0 auto;
+	margin-top: 50px;
+
+	@include media-query (desk) {
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+	}
+}
+
+.what_to_eat figure {
+	margin: 0px;
+	
+	@include media-query (tablet-and-up) {
+		margin: 15px;
+	}
+}
+
+.what_to_eat h2 {
+	text-transform: uppercase;
+	font-size: 16px;
+	margin-top: 25px;
+
+	@include media-query (tablet-and-up) {
+		font-size: 26px;
+	}
+}
+
+.what_to_eat .line {	
+	margin-top: 10px;
+
+	@include media-query (tablet-and-up) {
+		margin-top: 20px;
+	}
+}
+
+.what_to_eat p {
+	width: 300px;
+	font-family: $secondary-font;
+	font-size: 14px;
+	line-height: 175%;
+	margin-top: 15px;
+	padding: 0px 20px;
+
+	@include media-query (tablet-only) {
+		width: 600px;
+		font-size: 16px;
+		padding: 0px 20px;
+	}
+
+	@include media-query (desk) {
+		width: 350px;
+		font-size: 16px;
+		padding: 0px 0px;
+	}
+}
+
+.what_to_eat img {
+	width: 300px;
+	padding-top: 20px;
+
+	@include media-query (tablet-only) {
+		width: 600px;
+	}
+
+	@include media-query (desk) {
+		width: 350px;
+		padding-top: 0px;
+	}
+}
+
+// MARRAKESH -------------------------------------------------------
+
+.marrakesh_to_eat_wrapper h2 {
+	color: $marrakesh-primary-color;
+}
+
+.marrakesh_to_eat_wrapper .line {
+	background-color: $marrakesh-secondary-color;
+}
+
+// LISBON ----------------------------------------------------------
+
+.lisbon_to_eat_wrapper h2 {
+	color: $lisbon-primary-color;
+}
+
+.lisbon_to_eat_wrapper .line {
+	background-color: $lisbon-secondary-color;
+}
+
+// ZAGREB --------------------------------------------------------
+
+.zagreb_to_eat_wrapper h2 {
+	color: $zagreb-primary-color;
+}
+
+.zagreb_to_eat_wrapper .line {
+	background-color: $zagreb-secondary-color;
+}

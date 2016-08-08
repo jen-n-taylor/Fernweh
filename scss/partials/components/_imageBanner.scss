@@ -1,0 +1,31 @@
+
+// -------------------- IMAGE BANNER ---------------------
+
+
+// GLOBAL --------------------------------------------------------------
+
+.img_banner_container {
+	height: 500px;
+	width: 100% 100%;
+	background-position: center;
+	
+}
+
+
+// MARRAKESH ---------------------------------------------------------
+
+.marrakesh_img_banner {
+	background-image: url(../images/city_images/marrakesh_images/marrakesh_night_market.jpg); 
+}
+
+// LISBON ---------------------------------------------------------
+
+.lisbon_img_banner {
+	background-image: url(../images/city_images/lisbon_images/lisbon_end_banner.jpeg);
+}
+
+// ZAGREB ---------------------------------------------------------
+
+.zagreb_img_banner {
+	background-image: url(../images/city_images/lisbon_images/lisbon_end_banner.jpeg); 
+}

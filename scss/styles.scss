@@ -1,0 +1,36 @@
+
+// MANIFEST
+// -----------------------------------------------------------------
+
+
+// CSS NORMALIZE 
+@import "partials/normalize";
+
+// FONTS
+@import "partials/fonts";
+
+// COLORS
+@import "partials/colors";
+
+// BREAKPOINTS
+@import "partials/breakpoints";
+
+// GLOBALS
+@import "partials/globals";
+
+// FRONT PAGE
+@import "partials/front-page";
+
+// COMPONENTS
+@import "partials/components/_cityHeader";
+@import "partials/components/_theCity";
+@import "partials/components/_toSee";
+@import "partials/components/_sights";
+@import "partials/components/_toExplore";
+@import "partials/components/_exploring";
+@import "partials/components/_imageBanner";
+@import "partials/components/_toEat";
+@import "partials/components/_endBanner";
+
+// NAV
+@import "partials/components/nav";

@@ -1,0 +1,147 @@
+
+// -------------------- TO SEE ---------------------
+
+
+// GLOBAL --------------------------------------------------------------
+
+.to_see_container {
+	background-size: cover;
+	background-position: 100% 100%;
+	padding-top: 80px;
+	padding-bottom: 190px;
+}
+
+.to_see_wrapper {
+	width: 100%;
+	max-width: 1171px;
+	margin: 0 auto;
+
+	display: flex;
+	display: -webkit-flex;
+	justify-content: center;
+	-webkit-justify-content: center;
+
+	@include media-query (tablet-and-up) {
+		display: flex;
+		-webkit-display: flex;
+		justify-content: flex-end;
+		-webkit-justify-content: flex-end;
+	}
+}
+
+.to_see h2 {
+		text-transform: uppercase;
+		font-family: $main-font;
+		font-size: 30px;
+		margin: 0px;
+		text-align: center;
+
+		@include media-query (tablet-only) {
+			font-size: 60px;
+			text-align: center;
+			padding-right: 20px;
+		}
+
+		@include media-query (desk) {
+			font-size: 60px;
+			text-align: right;
+		}
+	}
+
+// What is going on with this line? Why won't it cooperate? I can't figure out how to get it to align-right in the "desk" media-query :(
+.to_see .line {
+		width: 63px;
+		height: 2px;
+		margin: 0 auto;
+		margin-top: 20px;
+
+		@include media-query (tablet-only) {
+			margin-top: 30px;
+		}
+
+		@include media-query (desk) {
+			margin-top: 30px;
+			margin-left: auto;
+			margin-right: 0;
+		}
+	}
+
+.to_see p {
+	font-family: $secondary-font;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 175%;
+	text-align: center;
+	padding: 0px 20px;
+
+	@include media-query (tablet) {
+		font-size: 18px;
+		font-weight: 400;
+		text-align: center;
+		padding-right: 20px;
+	}
+
+	@include media-query (desk) {
+		font-size: 18px;
+		width: 500px;
+		font-weight: 400;
+		text-align: right;
+		padding: 0;
+	}
+}
+
+// MARRAKESH ---------------------------------------------------------
+
+.to_see_container_marrakesh {
+	background-image: url(../images/city_images/marrakesh_images/marrakesh_shadow.jpg);
+}
+
+.to_see_marrakesh h2 {
+	color: seashell;
+}
+
+.to_see_marrakesh .line {
+	background-color: $marrakesh-secondary-color;
+}
+
+.to_see_marrakesh p {
+	color: seashell;
+}
+
+//	LISBON -----------------------------------------------------------
+
+.to_see_container_lisbon {
+	background-image: url(../images/city_images/lisbon_images/lisbon_bike.jpg);
+}
+
+.to_see_lisbon h2 {
+	color: seashell;
+}
+
+.to_see_lisbon .line {
+	background-color: $lisbon-secondary-color;
+}
+
+.to_see_lisbon p {
+	color: seashell;
+	
+}
+
+//	ZAGREB -----------------------------------------------------------
+
+.to_see_container_zagreb {
+	background-image: url(../images/city_images/zagreb_images/zagreb_see.jpg);
+}
+
+.to_see_zagreb h2 {
+	color: seashell;
+}
+
+.to_see_zagreb .line {
+	background-color: seashell;
+}
+
+.to_see_zagreb p {
+	color: seashell;
+	
+}

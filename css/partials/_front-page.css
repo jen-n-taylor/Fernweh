@@ -1,0 +1,57 @@
+/* HEADER begins ................................................... */
+.header_image {
+  background-image: url(../images/main_page_images/header_moon.jpg);
+  background-size: cover;
+  height: 100vh;
+  margin-top: 0px;
+  transition: background-image 1.5s;
+}
+
+.header_image .header_text {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+}
+
+.header_text h1 {
+  font-size: 125px;
+  font-style: strong;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: 500;
+  border: 5px solid white;
+  display: inline-block;
+  margin-top: 250px;
+  padding: 10px 23px 12px 28px;
+  /*pointer-events: auto;*/
+  transition: color 1s;
+}
+
+.header_text p {
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+}
+
+.smooth_scroll_arrow {
+  max-wdith: 1170px;
+  margin-top: 40px;
+  padding: 10px 20px 0px 20px;
+}
+
+.smooth_scroll_arrow i {
+  font-size: 60px;
+  text-align: center;
+  color: white;
+  transition: all 1s;
+}
+
+.smooth_scroll_arrow i:hover {
+  color: #c00015;
+}

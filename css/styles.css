@@ -1,0 +1,2588 @@
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,300);
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/*------------------------------------*    Media Queries
+\*------------------------------------*/
+/*
+ * Defining the break points and media queries mixin
+ *
+ * Breakpoint Variables
+ * Media Query Mixin
+ */
+* {
+  box-sizing: border-box;
+}
+
+.line {
+  width: 63px;
+  height: 2px;
+}
+
+footer {
+  background-color: #182431;
+  padding-top: 25px;
+}
+
+@media only screen and (min-width: 720px) {
+  footer {
+    padding-top: 50px;
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  -webkit-display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  width: 100%;
+  max-width: 275px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 720px) {
+  .footer-wrapper {
+    max-width: 800px;
+  }
+}
+
+.social-media-footer {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  margin: 0 auto;
+}
+
+.social-media-footer i {
+  list-style-type: none;
+  font-size: 25px;
+  display: inline-block;
+  padding: 0px 10px;
+  margin-left: 0px;
+  color: #427b66;
+  transition: color .75s;
+}
+
+.social-media-footer i:hover {
+  color: #c2b521;
+}
+
+@media only screen and (min-width: 720px) {
+  .social-media-footer i {
+    font-size: 45px;
+    padding: 0px 20px;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  -webkit-display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: seashell;
+  transition: color .75s;
+}
+
+.footer-nav a:hover {
+  color: #c2b521;
+}
+
+.nav-same-page {
+  display: flex;
+  -webkit-display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.nav-same-page a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 720px) {
+  .nav-same-page a {
+    font-size: 18px;
+  }
+}
+
+.nav-main-page {
+  display: flex;
+  -webkit-display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.nav-main-page a {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 200;
+}
+
+@media only screen and (min-width: 720px) {
+  .nav-main-page a {
+    font-size: 14px;
+  }
+}
+
+.nav-main-page span {
+  color: seashell;
+}
+
+.footer-2 {
+  background: #427b66;
+  margin-bottom: 0;
+}
+
+.footer-copyright {
+  display: flex;
+  -webkit-display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  width: 100%;
+  max-width: 275px;
+  margin: 0 auto;
+  font-family: "Raleway", sans-serif;
+  color: seashell;
+  font-weight: 200;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.footer-copyright a {
+  text-decoration: none;
+  color: seashell;
+  transition: color .75s;
+}
+
+.footer-copyright a:hover {
+  color: #182431;
+}
+
+@media only screen and (min-width: 720px) {
+  .footer-copyright {
+    max-width: 600px;
+  }
+}
+
+.footer-copyright .footer-p-1 {
+  font-size: 14px;
+  margin-bottom: 0px;
+}
+
+@media only screen and (min-width: 720px) {
+  .footer-copyright .footer-p-1 {
+    font-size: 16px;
+  }
+}
+
+.footer-copyright .footer-p-2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+/* HEADER begins ................................................... */
+.main_header {
+  background-image: url(../images/front_page_images/header_moon.jpg);
+  background-size: cover;
+  height: 80vh;
+  margin-top: 0;
+  transition: background-image 1.5s;
+}
+
+@media only screen and (min-width: 720px) {
+  .main_header {
+    height: 100vh;
+  }
+}
+
+.header_text {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
+
+.header_text h1 {
+  font-size: 35px;
+  font-style: strong;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: 500;
+  border: 2px solid #FFFFFF;
+  display: inline-block;
+  margin-top: 35%;
+  padding: 10px 23px 12px 28px;
+  transition: color 1s;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .header_text h1 {
+    padding-top: 15px;
+    font-size: 100px;
+    border: 5px solid #FFFFFF;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header_text h1 {
+    font-size: 125px;
+    border: 5px solid #FFFFFF;
+    margin-top: 250px;
+  }
+}
+
+.header_text p {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .header_text p {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header_text p {
+    font-size: 30px;
+  }
+}
+
+.smooth_scroll_arrow {
+  max-width: 1170px;
+  padding: 10px 20px 0px 20px;
+  margin-top: 20%;
+  margin-bottom: 1%;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .smooth_scroll_arrow {
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .smooth_scroll_arrow {
+    margin-top: 1.5%;
+    margin-bottom: 1%;
+  }
+}
+
+.smooth_scroll_arrow i {
+  font-size: 60px;
+  text-align: center;
+  color: #FFFFFF;
+  transition: all 1s;
+}
+
+.smooth_scroll_arrow i:hover {
+  color: #427b66;
+}
+
+/* FERNWEH begins ................................................... */
+.fernweh_container {
+  background-color: #ebedef;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 720px) {
+  .fernweh_container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+}
+
+.fernweh_wrapper {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.fernweh_wrapper h2 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  margin: 0;
+  color: #196675;
+}
+
+@media only screen and (min-width: 720px) {
+  .fernweh_wrapper h2 {
+    font-size: 60px;
+  }
+}
+
+.fernweh_wrapper .dictionary {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #427b66;
+  padding: 25px 20px 15px 20px;
+  margin: 0;
+}
+
+@media only screen and (min-width: 720px) {
+  .fernweh_wrapper .dictionary {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+}
+
+.fernweh_wrapper .line1 {
+  background-color: #c2b521;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 720px) {
+  .fernweh_wrapper .line1 {
+    margin-top: 45px;
+    margin-bottom: 40px;
+  }
+}
+
+.fernweh_wrapper .definition {
+  text-align: center;
+  line-height: 175%;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 720px) {
+  .fernweh_wrapper .definition {
+    max-width: 650px;
+    font-size: 16px;
+    padding: 0px;
+  }
+}
+
+.fernweh_wrapper .line2 {
+  background-color: #c2b521;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 720px) {
+  .fernweh_wrapper .line2 {
+    margin-top: 45px;
+    margin-bottom: 40px;
+  }
+}
+
+.fernweh_wrapper .collection {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  margin: 0px;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+@media only screen and (min-width: 720px) {
+  .fernweh_wrapper .collection {
+    padding: 0px;
+    font-size: 18px;
+  }
+}
+
+.fernweh_wrapper .collection span {
+  color: #427b66;
+}
+
+/* CITY GUIDES begin ............................................... */
+.city_guides_container {
+  margin: 40px 0;
+}
+
+@media only screen and (min-width: 720px) {
+  .city_guides_container {
+    margin: 80px 0;
+  }
+}
+
+.city_guides_wrapper {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.city_guides_title {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.city_guides_title h2 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  color: #196675;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 720px) {
+  .city_guides_title h2 {
+    font-size: 60px;
+  }
+}
+
+.city_guides_title .line {
+  background-color: #c2b521;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 720px) {
+  .city_guides_title .line {
+    margin-bottom: 30px;
+  }
+}
+
+.guide_container {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: center;
+  -webkit-justify-content: center;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+@media only screen and (min-width: 720px) {
+  .guide_container {
+    margin-top: 30px;
+  }
+}
+
+.guide_container figure {
+  margin: 10px;
+  position: relative;
+  transition: opacity 1s;
+}
+
+.guide_container figure:hover {
+  opacity: .7;
+}
+
+.guide_container img {
+  height: 250px;
+  width: 250px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .guide_container img {
+    height: 330px;
+    width: 330px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .guide_container img {
+    height: 370px;
+    width: 370px;
+  }
+}
+
+.guide_container figcaption {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  height: 170px;
+  width: 170px;
+  font-family: "Raleway", sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  text-align: center;
+  color: #FFFFFF;
+  border: solid #FFFFFF 6px;
+  padding-top: 55px;
+  transition: opacity .75s;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .guide_container figcaption {
+    top: 65px;
+    left: 65px;
+    height: 200px;
+    width: 200px;
+    font-size: 30px;
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .guide_container figcaption {
+    top: 72px;
+    left: 72px;
+    height: 226px;
+    width: 226px;
+    font-size: 30px;
+    padding-top: 72.5px;
+  }
+}
+
+/* ABOUT ME begins ................................................. */
+.about_me_container {
+  background-color: #ebedef;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .about_me_container {
+    margin: 80px 0;
+    padding: 0px;
+  }
+}
+
+.about_me_wrapper {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: space- between;
+  -webkit-justify-content: space-between;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.about_me_picture {
+  display: none;
+}
+
+@media only screen and (min-width: 720px) {
+  .about_me_picture {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .about_me_picture img {
+    height: 400px;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about_me_picture img {
+    height: 600px;
+    padding: 0;
+  }
+}
+
+.about_me_blurb {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.about_me_title {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.about_me_title h2 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  color: #196675;
+  margin-top: 0px;
+}
+
+@media only screen and (min-width: 720px) {
+  .about_me_title h2 {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+}
+
+.about_me_title .line {
+  background-color: #c2b521;
+  margin-top: -10px;
+}
+
+.about_me_text {
+  padding: 0px 20px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .about_me_text {
+    max-width: 350px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about_me_text {
+    max-width: 500px;
+    padding: 0px;
+    margin-top: 40px;
+  }
+}
+
+.about_me_text p {
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .about_me_text p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about_me_text p {
+    font-size: 16px;
+  }
+}
+
+.about_me_text .line_small {
+  background-color: #196675;
+  height: 2px;
+}
+
+.about_me_text .quote {
+  margin-top: 25px;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .about_me_text .quote {
+    margin-top: 25px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about_me_text .quote {
+    margin-top: 45px;
+    font-size: 18px;
+  }
+}
+
+.about_me_text .steinbeck {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .about_me_text .steinbeck {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about_me_text .steinbeck {
+    font-size: 14px;
+  }
+}
+
+/* CONTACT begins ................................................... */
+.contact_me_container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 720px) {
+  .contact_me_container {
+    margin: 80px 0;
+    padding-top: 0;
+  }
+}
+
+.contact_title {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+.contact_title h2 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  color: #196675;
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact_title h2 {
+    font-size: 60px;
+    padding-top: 0;
+    margin-top: 0;
+  }
+}
+
+.contact_title .line {
+  background-color: #c2b521;
+  margin-top: -10px;
+}
+
+.contact_me_wrapper {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: center;
+  -webkit-justify-content: center;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .contact_me_wrapper {
+    justify-content: center;
+    -webkit-justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact_me_wrapper {
+    justify-content: space- between;
+    -webkit-justify-content: space-between;
+    margin-top: 60px;
+  }
+}
+
+.get_in_touch {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+}
+
+@media only screen and (min-width: 720px) {
+  form {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+input {
+  display: block;
+  border: none;
+  border-bottom: 1px solid gray;
+  background-color: rgba(200, 200, 200, 0.1);
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+@media only screen and (min-width: 720px) {
+  input {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
+.firstName, .lastName {
+  width: 280px;
+  font-family: "Raleway", sans-serif;
+  padding: 10px 15px;
+}
+
+@media only screen and (min-width: 720px) {
+  .firstName, .lastName {
+    width: 292px;
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .firstName {
+    margin-right: 10px;
+  }
+}
+
+.email {
+  width: 280px;
+  font-family: "Raleway", sans-serif;
+  padding: 10px 15px;
+}
+
+@media only screen and (min-width: 720px) {
+  .email {
+    width: 598px;
+    margin-top: 10px;
+  }
+}
+
+.message {
+  width: 280px;
+  font-family: "Raleway", sans-serif;
+  padding: 10px 15px;
+  margin-top: 10px;
+  border: 1px solid grey;
+  margin-left: 20px;
+}
+
+@media only screen and (min-width: 720px) {
+  .message {
+    width: 598px;
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+}
+
+.checkbox input {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+label {
+  display: none;
+}
+
+@media only screen and (min-width: 720px) {
+  label {
+    display: inline-block;
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+label p {
+  display: none;
+}
+
+@media only screen and (min-width: 720px) {
+  label p {
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+  }
+}
+
+.send {
+  width: 280px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  transition: color 1s, background-color 1s;
+}
+
+@media only screen and (min-width: 720px) {
+  .send {
+    width: 598px;
+  }
+}
+
+.send:hover {
+  background-color: #196675;
+  color: white;
+  border-bottom: solid 1px #196675;
+}
+
+.social_media_icons {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+@media only screen and (min-width: 720px) {
+  .social_media_icons {
+    margin-top: 50px;
+  }
+}
+
+.social_media_icons i {
+  list-style-type: none;
+  font-size: 25px;
+  display: inline-block;
+  padding: 0px 25px;
+  margin-left: 0px;
+  color: #196675;
+  transition: color 1s;
+}
+
+.social_media_icons i:hover {
+  color: #c2b521;
+}
+
+@media only screen and (min-width: 720px) {
+  .social_media_icons i {
+    font-size: 50px;
+    padding: 0px 50px;
+  }
+}
+
+.contact_me_image {
+  display: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact_me_image {
+    display: block;
+  }
+}
+
+.contact_me_image img {
+  max-height: 500px;
+}
+
+.city-header {
+  background-size: cover;
+  height: 500px;
+  margin-top: 0px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .city-header {
+    height: 700px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .city-header {
+    height: 500px;
+  }
+}
+
+.city-header-text {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  font-family: "Raleway", sans-serif;
+}
+
+.city-header-title {
+  font-size: 35px;
+  font-style: strong;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  font-weight: 500;
+  display: inline-block;
+  margin-top: 100px;
+  padding: 10px 23px 12px 28px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .city-header-title {
+    font-size: 100px;
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .city-header-title {
+    font-size: 125px;
+    margin-top: 130px;
+  }
+}
+
+.city-header-marrakesh {
+  background-image: url(../images/city_images/marrakesh_images/header_marrakesh.jpg);
+}
+
+.city-header-text-marrakesh {
+  color: #c2b521;
+}
+
+.city-header-lisbon {
+  background-image: url(../images/city_images/lisbon_images/header_lisbon.jpg);
+  width: 100%;
+}
+
+.city-header-text-lisbon {
+  color: #ffe2b8;
+}
+
+.city-header-zagreb {
+  background-image: url(../images/city_images/zagreb_images/oldtown_zagreb.jpg);
+}
+
+.city-header-text-zagreb {
+  color: #293243;
+}
+
+.the_city {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #ebedef;
+}
+
+.coordinates {
+  display: flex;
+  -webkit-display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 720px) {
+  .coordinates {
+    font-size: 30px;
+  }
+}
+
+.coordinates .line {
+  width: 63px;
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 45px;
+}
+
+@media only screen and (min-width: 720px) {
+  .coordinates .line {
+    margin-top: 20px;
+  }
+}
+
+.the_city_wrapper {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  justify-content: space-around;
+  -webkit-justify-content: space-around;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .the_city_wrapper {
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+  }
+}
+
+.country_location {
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .country_location {
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .country_location {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+.map {
+  position: relative;
+}
+
+/* MAP ANIMATION STARTS*/
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+  }
+}
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: scale(1);
+  }
+}
+
+.pulse_holder {
+  display: block;
+  position: absolute;
+  border-radius: 100%;
+}
+
+.pulse_holder .pulse_marker {
+  display: block;
+  width: 10px;
+  height: 18px;
+  background-color: transparent;
+  background-position: 50% 50%;
+  background-size: cover;
+  padding-left: 3px;
+}
+
+.pulse_marker:before,
+.pulse_marker:after {
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  /* Giving Animation Function */
+  -webkit-animation: pulse 2s ease-out infinite;
+  -moz-animation: pulse 2s ease-out infinite;
+  border-image: initial;
+}
+
+.pulse_marker:before {
+  left: -27px;
+  top: -27px;
+  width: 64px;
+  height: 64px;
+}
+
+.pulse_marker:after {
+  left: -59px;
+  top: -59px;
+  width: 128px;
+  height: 128px;
+}
+
+.about_city {
+  width: 250px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .about_city {
+    width: 350px;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .about_city {
+    width: 500px;
+    text-align: left;
+  }
+}
+
+.about_city h2 {
+  font-family: "Raleway", sans-serif;
+  padding-top: 30px;
+}
+
+@media only screen and (min-width: 720px) {
+  .about_city h2 {
+    padding-top: 0px;
+  }
+}
+
+.about_city p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 175%;
+}
+
+.coordinates_marrakesh {
+  color: #c2b521;
+}
+
+.coordinates_marrakesh .line {
+  background-color: #196675;
+}
+
+.marrakesh_country_location {
+  background-image: url(../images/city_images/marrakesh_images/marrakesh_map.png);
+}
+
+.marrakesh_pulse_holder i {
+  color: #c2b521;
+}
+
+.marrakesh_pulse_holder {
+  top: 45px;
+  left: 120px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .marrakesh_pulse_holder {
+    top: 80px;
+    left: 180px;
+  }
+}
+
+.marrakesh_pulse_marker:before,
+.marrakesh_pulse_marker:after {
+  background-color: rgba(194, 181, 33, 0.2);
+  border: 3px dotted #c2b521;
+}
+
+.about_city_marrakesh h2 {
+  color: #305a48;
+}
+
+.coordinates_lisbon {
+  color: #e3967c;
+}
+
+.coordinates_lisbon .line {
+  background-color: #226d72;
+}
+
+.lisbon_country_location {
+  background-image: url(../images/city_images/lisbon_images/lisbon_map.png);
+}
+
+.lisbon_pulse_holder i {
+  color: #e3967c;
+}
+
+.lisbon_pulse_holder {
+  top: 118px;
+  left: 55px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .lisbon_pulse_holder {
+    top: 183px;
+    left: 87px;
+  }
+}
+
+.lisbon_pulse_marker:before,
+.lisbon_pulse_marker:after {
+  background-color: rgba(219, 169, 110, 0.2);
+  border: 3px dotted #dba96e;
+}
+
+.about_city_lisbon h2 {
+  color: #64a5a9;
+}
+
+.coordinates_zagreb {
+  color: #c3444b;
+}
+
+.coordinates_zagreb .line {
+  background-color: #3286b2;
+}
+
+.zagreb_country_location {
+  background-image: url(../images/city_images/zagreb_images/zagreb_map.png);
+}
+
+.zagreb_pulse_holder i {
+  color: #c3444b;
+}
+
+.zagreb_pulse_holder {
+  top: 27px;
+  left: 73px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .zagreb_pulse_holder {
+    top: 47px;
+    left: 113px;
+  }
+}
+
+.zagreb_pulse_marker:before,
+.zagreb_pulse_marker:after {
+  background-color: rgba(195, 68, 75, 0.2);
+  border: 3px dotted #c3444b;
+}
+
+.about_city_zagreb h2 {
+  color: #1c205c;
+}
+
+.to_see_container {
+  background-size: cover;
+  background-position: 100% 100%;
+  padding-top: 80px;
+  padding-bottom: 190px;
+}
+
+.to_see_wrapper {
+  width: 100%;
+  max-width: 1171px;
+  margin: 0 auto;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+@media only screen and (min-width: 720px) {
+  .to_see_wrapper {
+    display: flex;
+    -webkit-display: flex;
+    justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+  }
+}
+
+.to_see h2 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  margin: 0px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .to_see h2 {
+    font-size: 60px;
+    text-align: center;
+    padding-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .to_see h2 {
+    font-size: 60px;
+    text-align: right;
+  }
+}
+
+.to_see .line {
+  width: 63px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .to_see .line {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .to_see .line {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: 0;
+  }
+}
+
+.to_see p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 175%;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .to_see p {
+    font-size: 18px;
+    width: 500px;
+    font-weight: 400;
+    text-align: right;
+    padding: 0;
+  }
+}
+
+.to_see_container_marrakesh {
+  background-image: url(../images/city_images/marrakesh_images/marrakesh_shadow.jpg);
+}
+
+.to_see_marrakesh h2 {
+  color: seashell;
+}
+
+.to_see_marrakesh .line {
+  background-color: #196675;
+}
+
+.to_see_marrakesh p {
+  color: seashell;
+}
+
+.to_see_container_lisbon {
+  background-image: url(../images/city_images/lisbon_images/lisbon_bike.jpg);
+}
+
+.to_see_lisbon h2 {
+  color: seashell;
+}
+
+.to_see_lisbon .line {
+  background-color: #226d72;
+}
+
+.to_see_lisbon p {
+  color: seashell;
+}
+
+.to_see_container_zagreb {
+  background-image: url(../images/city_images/zagreb_images/zagreb_see.jpg);
+}
+
+.to_see_zagreb h2 {
+  color: seashell;
+}
+
+.to_see_zagreb .line {
+  background-color: seashell;
+}
+
+.to_see_zagreb p {
+  color: seashell;
+}
+
+.sights_container {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+@media only screen and (min-width: 720px) {
+  .sights_container {
+    padding-top: 80px;
+  }
+}
+
+.sights_wrapper {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  width: 100%;
+  max-width: 1171px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .sights_wrapper {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sights_wrapper {
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+  }
+}
+
+.sights_container figure {
+  margin: 15px;
+}
+
+.sights_wrapper h2 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 720px) {
+  .sights_wrapper h2 {
+    font-size: 26px;
+  }
+}
+
+.sights_wrapper .line {
+  width: 63px;
+  height: 2px;
+  align: right;
+  margin-top: 5px;
+}
+
+@media only screen and (min-width: 720px) {
+  .sights_wrapper .line {
+    margin-top: 10px;
+  }
+}
+
+.sights_wrapper p {
+  width: 290px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 175%;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .sights_wrapper p {
+    font-size: 16px;
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sights_wrapper p {
+    font-size: 16px;
+    width: 340px;
+  }
+}
+
+.sights_wrapper img {
+  width: 290px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .sights_wrapper img {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .sights_wrapper img {
+    width: 340px;
+  }
+}
+
+.marrakesh_sights_wrapper h2 {
+  color: #c2b521;
+}
+
+.marrakesh_sights_wrapper .line {
+  background-color: #196675;
+}
+
+.lisbon_sights_wrapper h2 {
+  color: #e3967c;
+}
+
+.lisbon_sights_wrapper .line {
+  background-color: #226d72;
+}
+
+.zagreb_sights_wrapper h2 {
+  color: #c3444b;
+}
+
+.zagreb_sights_wrapper .line {
+  background-color: #3286b2;
+}
+
+.explore_container {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  background-color: #ebedef;
+  padding: 80px 0px;
+}
+
+.explore_wrapper {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  width: 100%;
+  max-width: 1171px;
+  margin: 0 auto;
+}
+
+.explore_wrapper h2 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 720px) {
+  .explore_wrapper h2 {
+    font-size: 60px;
+  }
+}
+
+.explore_wrapper .line {
+  width: 63px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 720px) {
+  .explore_wrapper .line {
+    margin-top: 40px;
+  }
+}
+
+.explore_wrapper p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 175%;
+  width: 300px;
+  margin-top: 40px;
+  padding: 0px 20px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .explore_wrapper p {
+    font-size: 16px;
+    width: 600px;
+    padding: 0px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .explore_wrapper p {
+    width: 1000px;
+    font-size: 16px;
+    padding: 0px;
+  }
+}
+
+.marrakesh_explore_wrapper h2 {
+  color: #c2b521;
+}
+
+.marrakesh_explore_wrapper .line {
+  background-color: #196675;
+}
+
+.lisbon_explore_wrapper h2 {
+  color: #e3967c;
+}
+
+.lisbon_explore_wrapper .line {
+  background-color: #226d72;
+}
+
+.zagreb_explore_wrapper h2 {
+  color: #c3444b;
+}
+
+.zagreb_explore_wrapper .line {
+  background-color: #3286b2;
+}
+
+.exploring_container {
+  padding: 0px 0px;
+}
+
+@media only screen and (min-width: 720px) {
+  .exploring_container {
+    padding: 80px 0px;
+  }
+}
+
+.exploring_wrapper {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  width: 100%;
+  max-width: 1171px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1024px) {
+  .exploring_wrapper {
+    flex-wrap: nowrap;
+    -webkit-flex-wrap: nowrap;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+  }
+}
+
+.exploring_wrapper figure {
+  padding: 0px;
+  margin: 0px;
+}
+
+.exploring_wrapper img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 720px) {
+  .exploring_wrapper img {
+    width: 518px;
+    height: 700px;
+  }
+}
+
+.exploring_sights {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+@media only screen and (min-width: 720px) {
+  .exploring_sights {
+    padding-left: 55px;
+  }
+}
+
+.explore {
+  padding-top: 20px;
+}
+
+.exploring_wrapper h2 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 720px) {
+  .exploring_wrapper h2 {
+    font-size: 26px;
+  }
+}
+
+.exploring_wrapper .line {
+  width: 63px;
+  height: 2px;
+  align: right;
+  margin-top: 10px;
+}
+
+.exploring_wrapper p {
+  text-align: left;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 175%;
+  width: 270px;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .exploring_wrapper p {
+    font-size: 16px;
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .exploring_wrapper p {
+    font-size: 16px;
+    width: 600px;
+  }
+}
+
+.marrakesh_exploring_sights h2 {
+  color: #c2b521;
+}
+
+.marrakesh_exploring_sights .line {
+  background-color: #196675;
+}
+
+.lisbon_exploring_sights h2 {
+  color: #e3967c;
+}
+
+.lisbon_exploring_sights .line {
+  background-color: #226d72;
+}
+
+.zagreb_exploring_sights h2 {
+  color: #c3444b;
+}
+
+.zagreb_exploring_sights .line {
+  background-color: #3286b2;
+}
+
+.img_banner_container {
+  height: 500px;
+  width: 100% 100%;
+  background-position: center;
+}
+
+.marrakesh_img_banner {
+  background-image: url(../images/city_images/marrakesh_images/marrakesh_night_market.jpg);
+}
+
+.lisbon_img_banner {
+  background-image: url(../images/city_images/lisbon_images/lisbon_end_banner.jpeg);
+}
+
+.zagreb_img_banner {
+  background-image: url(../images/city_images/lisbon_images/lisbon_end_banner.jpeg);
+}
+
+.to_eat_container {
+  padding: 80px 0px;
+}
+
+.to_eat_wrapper {
+  width: 100%;
+  max-width: 1171px;
+  margin: 0 auto;
+}
+
+.to_eat_wrapper h2 {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media only screen and (min-width: 720px) {
+  .to_eat_wrapper h2 {
+    font-size: 60px;
+  }
+}
+
+.to_eat_wrapper .line {
+  width: 63px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+@media only screen and (min-width: 720px) {
+  .to_eat_wrapper .line {
+    margin-top: 40px;
+  }
+}
+
+.what_to_eat {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  width: 100%;
+  max-width: 1171px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .what_to_eat {
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+  }
+}
+
+.what_to_eat figure {
+  margin: 0px;
+}
+
+@media only screen and (min-width: 720px) {
+  .what_to_eat figure {
+    margin: 15px;
+  }
+}
+
+.what_to_eat h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+@media only screen and (min-width: 720px) {
+  .what_to_eat h2 {
+    font-size: 26px;
+  }
+}
+
+.what_to_eat .line {
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 720px) {
+  .what_to_eat .line {
+    margin-top: 20px;
+  }
+}
+
+.what_to_eat p {
+  width: 300px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 175%;
+  margin-top: 15px;
+  padding: 0px 20px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .what_to_eat p {
+    width: 600px;
+    font-size: 16px;
+    padding: 0px 20px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .what_to_eat p {
+    width: 350px;
+    font-size: 16px;
+    padding: 0px 0px;
+  }
+}
+
+.what_to_eat img {
+  width: 300px;
+  padding-top: 20px;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  .what_to_eat img {
+    width: 600px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .what_to_eat img {
+    width: 350px;
+    padding-top: 0px;
+  }
+}
+
+.marrakesh_to_eat_wrapper h2 {
+  color: #c2b521;
+}
+
+.marrakesh_to_eat_wrapper .line {
+  background-color: #196675;
+}
+
+.lisbon_to_eat_wrapper h2 {
+  color: #e3967c;
+}
+
+.lisbon_to_eat_wrapper .line {
+  background-color: #226d72;
+}
+
+.zagreb_to_eat_wrapper h2 {
+  color: #c3444b;
+}
+
+.zagreb_to_eat_wrapper .line {
+  background-color: #3286b2;
+}
+
+.end_banner_container {
+  height: 500px;
+  background-position: center;
+}
+
+.marrakesh_end_banner {
+  background-image: url(../images/city_images/marrakesh_images/marrakesh_end_banner.jpeg);
+}
+
+.lisbon_end_banner {
+  background-image: url(../images/city_images/lisbon_images/lisbon_wave.jpeg);
+}
+
+.zagreb_end_banner {
+  background-image: url(../images/city_images/zagreb_images/zagreb_window.jpg);
+}
+
+.navigation_container {
+  margin-top: 0px;
+}
+
+nav {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  align-items: center;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  justify-content: center;
+  -webkit-justify-content: center;
+  margin: 0;
+  padding-left: 0;
+}
+
+@media only screen and (min-width: 720px) {
+  nav ul {
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: space-around;
+    -webkit-justify-content: space-around;
+  }
+}
+
+nav li {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  list-style-type: none;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  margin: 5%;
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  nav li {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  nav li {
+    font-size: 23px;
+  }
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.nav-main nav a {
+  color: #196675;
+  transition: color .5s, border-bottom .5s;
+}
+
+.nav-main nav a:hover {
+  color: #c2b521;
+  border-bottom: solid 2px #c2b521;
+}
+
+.nav-marrakesh nav a {
+  color: #305a48;
+  transition: color .5s, border-bottom .5s;
+}
+
+.nav-marrakesh nav a:hover {
+  color: #c2b521;
+  border-bottom: solid 2px #c2b521;
+}
+
+.nav-lisbon nav a {
+  color: #64a5a9;
+  transition: color .5s, border-bottom .5s;
+}
+
+.nav-lisbon nav a:hover {
+  color: #e3967c;
+  border-bottom: solid 2px #e3967c;
+}
+
+.nav-zagreb nav a {
+  color: #1c205c;
+  transition: color .5s, border-bottom .5s;
+}
+
+.nav-zagreb nav a:hover {
+  color: #c3444b;
+  border-bottom: solid 2px #c3444b;
+}

@@ -1,0 +1,202 @@
+// GLOBALS
+// Anything to do with laying out the page goes here
+// ---------------------------------------------------------------- //
+
+// BORDER BOX ........................................................
+
+* {
+		box-sizing: border-box;
+	}
+
+
+// LINE .................................................................
+
+.line {
+	width: 63px;
+	height: 2px;
+}
+
+// FOOTER ...............................................................
+
+footer {
+	background-color: $footer-color;
+	padding-top: 25px;
+	
+		@include media-query (tablet-and-up) {
+			padding-top: 50px;
+		}
+}
+
+.footer-wrapper {
+	display: flex;
+	-webkit-display: flex;
+ 	flex-direction: column;
+ 	-webkit-flex-direction: column;
+ 	justify-content: space-between;
+ 	-webkit-justify-content: space-between;
+
+	width: 100%;
+	max-width: 275px;
+	margin: 0 auto;
+
+	@include media-query (tablet-and-up) {
+		max-width: 800px;
+	}
+}
+
+.social-media-footer {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	justify-content: space-around;
+	-webkit-justify-content: space-around;
+	
+	margin: 0 auto;
+
+	i {
+		list-style-type: none;
+		font-size: 25px;
+		display: inline-block;
+		padding: 0px 10px;
+		margin-left: 0px;
+		color: $main-secondary-color;
+		transition: color .75s;
+
+		&:hover {
+		color: $main-tertiary-color;
+		}
+
+		@include media-query (tablet-and-up) {
+			font-size: 45px;
+			padding: 0px 20px;
+		}
+	}
+}
+
+.footer-nav {
+	display: flex;
+	-webkit-display: flex;
+ 	flex-direction: column;
+ 	-webkit-flex-direction: column;
+ 	justify-content: space-between;
+ 	-webkit-justify-content: space-between;
+
+ 	a {
+ 		text-decoration: none;
+ 		color: seashell;
+ 		transition: color .75s;
+
+ 			&:hover {
+ 				color: $main-tertiary-color;
+ 			}
+ 	}
+}
+
+.nav-same-page {
+	display: flex;
+	-webkit-display: flex;
+ 	flex-direction: row;
+ 	-webkit-flex-direction: row;
+ 	justify-content: space-around;
+ 	-webkit-justify-content: space-around;
+	
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	margin-top: 30px;
+
+ 		a {
+			font-family: $main-font;
+ 			text-transform: uppercase;
+ 			font-size: 12px;
+
+ 			@include media-query (tablet-and-up) {
+ 				font-size: 18px;
+ 			}
+ 		}
+}
+
+.nav-main-page {
+	display: flex;
+	-webkit-display: flex;
+ 	flex-direction: row;
+ 	-webkit-flex-direction: row;
+ 	justify-content: space-around;
+ 	-webkit-justify-content: space-around;
+
+	width: 100%;
+ 	max-width: 400px;
+ 	margin: 0 auto;
+ 	margin-top: 30px;
+ 	margin-bottom: 30px;
+
+ 	 	a {
+ 			font-family: $main-font;
+ 	 		text-transform: uppercase;
+ 	 		font-size: 12px;
+ 	 		font-weight: 200;
+
+ 	 		@include media-query (tablet-and-up) {
+ 	 			font-size: 14px;
+ 	 		}
+ 	 	}
+
+ 	 	span {
+ 	 		color: seashell;
+ 	 	}
+}
+
+.footer-2 {
+	background: $main-secondary-color;
+	margin-bottom: 0;
+}
+
+.footer-copyright {
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+
+	width: 100%;
+	max-width: 275px;
+	margin: 0 auto;
+
+	font-family: $main-font;
+	color: seashell;
+	font-weight: 200;
+	text-align: center;
+	padding-top: 10px;
+
+		a {
+			text-decoration: none;
+			color: seashell;
+			transition: color .75s;
+
+			&:hover {
+				color: $footer-color;
+			}
+		}
+	@include media-query (tablet-and-up) {
+		max-width: 600px;
+	}
+}
+
+.footer-copyright .footer-p-1 {
+	font-size: 14px;
+	margin-bottom: 0px;
+
+	@include media-query (tablet-and-up) {
+		font-size: 16px;
+	}
+}
+
+.footer-copyright .footer-p-2 {
+	font-size: 12px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+}

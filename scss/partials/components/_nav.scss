@@ -1,0 +1,105 @@
+
+// ------------------ NAVIGATION ------------------
+
+
+.navigation_container {
+	margin-top: 0px;
+}
+
+nav {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+
+	ul {
+		display: flex;
+		display: -webkit-flex;
+		-webkit-align-items: center;
+		align-items: center;
+		flex-direction: column;
+		-webkit-flex-direction: column;
+		justify-content: center;
+		-webkit-justify-content: center;
+
+		margin: 0;
+		padding-left: 0;
+
+		@include media-query (tablet-and-up) {
+			flex-direction: row;
+			-webkit-flex-direction: row;
+			justify-content: space-around;
+			-webkit-justify-content: space-around;
+		}
+	}
+
+	li {
+		text-transform: uppercase;
+		font-family: $main-font;
+		list-style-type: none;
+		font-size: 20px;
+		letter-spacing: 1.5px;
+		margin: 5%;
+
+		@include media-query (tablet-only) {
+			font-size: 17px;
+		}
+
+		@include media-query (desk) {
+			font-size: 23px;
+		}
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+}
+
+// ------------------ INDEX ------------------
+
+.nav-main nav a {
+		color: $main-primary-color;
+		transition: color .5s, border-bottom .5s;
+	
+		&:hover {
+			color: $main-tertiary-color;
+			border-bottom: solid 2px $main-tertiary-color;
+		}
+}
+
+// ------------------ MOROCCO ------------------
+
+.nav-marrakesh nav a {
+		color: $marrakesh-tertiary-color;
+		transition: color .5s, border-bottom .5s;
+	
+		&:hover {
+			color: $marrakesh-primary-color;
+			border-bottom: solid 2px $marrakesh-primary-color;
+		}
+}
+
+// ------------------ LISBON ------------------
+
+.nav-lisbon nav a {
+		color: $lisbon-tertiary-color;
+		transition: color .5s, border-bottom .5s;
+	
+		&:hover {
+			color: $lisbon-primary-color;
+			border-bottom: solid 2px $lisbon-primary-color;
+		}
+}
+
+
+// ------------------ ZAGREB ------------------
+
+.nav-zagreb nav a {
+		color: $zagreb-tertiary-color;
+		transition: color .5s, border-bottom .5s;
+	
+		&:hover {
+			color: $zagreb-primary-color;
+			border-bottom: solid 2px $zagreb-primary-color;
+		}
+}

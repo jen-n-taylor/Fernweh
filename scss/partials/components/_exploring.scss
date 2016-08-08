@@ -1,0 +1,143 @@
+
+// -------------------- EXPLORING ---------------------
+
+
+// GLOBALS
+// ------------------------------------------------------------
+
+.exploring_container {
+	padding: 0px 0px;
+
+	@include media-query (tablet-and-up) {
+		padding: 80px 0px;
+	}
+}
+
+.exploring_wrapper {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	
+	width: 100%;
+	max-width: 1171px;
+	margin: 0 auto;
+
+	@include media-query (desk) {
+		flex-wrap: nowrap;
+		-webkit-flex-wrap: nowrap;
+		flex-direction: row;
+		-webkit-flex-direction: row;
+	}
+}
+
+.exploring_wrapper figure {
+	padding: 0px;
+	margin: 0px;
+}
+
+.exploring_wrapper img {
+	width: 100%;
+
+	@include media-query (tablet-and-up) {
+		width: 518px;
+		height: 700px;
+	}
+}
+
+.exploring_sights {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+
+	
+	@include media-query (tablet-and-up) {
+		padding-left: 55px;
+	}
+}
+
+.explore {
+	padding-top: 20px;
+}
+
+.exploring_wrapper h2 {
+	text-transform: uppercase;
+	font-family: $main-font;
+	font-size: 16px;
+
+	@include media-query (tablet-and-up) {
+		font-size: 26px;
+	}
+}
+
+.exploring_wrapper .line {
+		width: 63px;
+		height: 2px;
+		align: right;
+		margin-top: 10px;
+	}
+
+.exploring_wrapper p {
+	text-align: left;
+	font-family: $secondary-font;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 175%;
+	width: 270px;
+	margin-top: 10px;
+
+	@include media-query (tablet-only) {
+		font-size: 16px;
+		width: 600px;
+	}
+
+	@include media-query (desk) {
+		font-size: 16px;
+		width: 600px;
+	}
+}
+
+// MARRAKESH ---------------------------------------------------------
+
+.marrakesh_exploring_sights h2 {
+	color: $marrakesh-primary-color;
+}
+
+.marrakesh_exploring_sights .line {
+	background-color: $marrakesh-secondary-color;
+}
+
+// LISBON ------------------------------------------------------------
+
+.lisbon_exploring_sights h2 {
+	color: $lisbon-primary-color;
+}
+
+.lisbon_exploring_sights .line {
+	background-color: $lisbon-secondary-color;
+}
+
+// ZAGREB --------------------------------------------------
+
+.zagreb_exploring_sights h2 {
+	color: $zagreb-primary-color;
+}
+
+.zagreb_exploring_sights .line {
+	background-color: $zagreb-secondary-color;
+}
+
+
+
+

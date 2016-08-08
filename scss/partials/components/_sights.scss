@@ -1,0 +1,130 @@
+
+// -------------------- SIGHTS ---------------------
+
+
+// GLOBAL 
+// --------------------------------------------------
+
+.sights_container {
+	padding-top: 20px;
+	padding-bottom: 60px;
+
+	@include media-query (tablet-and-up) {
+		padding-top: 80px;
+	}
+}
+
+.sights_wrapper {
+	display: flex;
+	display: -webkit-flex;
+	-webkit-align-items: center;
+	align-items: center;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	justify-content: space-between;
+	-webkit-justify-content: space-between;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+
+	width: 100%;
+	max-width: 1171px;
+	margin: 0 auto;
+
+	@include media-query (tablet-only) {
+		flex-direction: column;
+		-webkit-flex-direction: column;
+	}
+
+	@include media-query (desk) {
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		flex-wrap: wrap;
+		-webkit-flex-wrap: wrap;
+
+	}
+}
+
+.sights_container figure {
+	margin: 15px;
+}
+
+.sights_wrapper h2 {
+	text-transform: uppercase;
+	font-family: $main-font;
+	font-size: 16px;
+
+	@include media-query (tablet-and-up) {
+		font-size: 26px;
+	}
+}
+
+.sights_wrapper .line {
+		width: 63px;
+		height: 2px;
+		align: right;
+		margin-top: 5px;
+		
+		@include media-query (tablet-and-up) {
+			margin-top: 10px;
+		}
+	}
+
+.sights_wrapper p {
+	width: 290px;
+	font-family: $secondary-font;
+	font-size: 14px;
+	line-height: 175%;
+
+	@include media-query (tablet-only) {
+		font-size: 16px;
+		width: 600px;
+	}
+
+	@include media-query (desk) {
+		font-size: 16px;
+		width: 340px;
+	}
+}
+
+.sights_wrapper img {
+	width: 290px;
+
+	@include media-query (tablet-only) {
+		width: 600px;
+	}
+	
+	@include media-query (desk) {
+		width: 340px;
+	}
+}
+
+// MARRAKESH ---------------------------------------------------------
+
+.marrakesh_sights_wrapper h2 {
+	color: $marrakesh_primary-color;
+}
+
+.marrakesh_sights_wrapper .line {
+	background-color: $marrakesh-secondary-color;
+}
+
+// LISBON ------------------------------------------------------------
+
+.lisbon_sights_wrapper h2 {
+	color: $lisbon-primary-color;
+}
+
+.lisbon_sights_wrapper .line {
+	background-color: $lisbon-secondary-color;
+}
+
+// ZAGREB ---------------------------------------------------------
+
+.zagreb_sights_wrapper h2 {
+	color: $zagreb_primary-color;
+}
+
+.zagreb_sights_wrapper .line {
+	background-color: $zagreb-secondary-color;
+}
+
